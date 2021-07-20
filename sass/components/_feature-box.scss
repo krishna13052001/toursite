@@ -1,0 +1,25 @@
+.feature-box{
+    background-color: rgba($color-white,0.8);
+    font-size: 1.5rem;
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: 0 1.5rem 4rem rgba(0,0,0,0.8);
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+    -moz-transition: all 0.8s;
+    -ms-transition: all 0.8s;
+    -o-transition: all 0.8s;
+
+    &:hover{
+        transform: translate(-1.5rem) scale(1.03);
+        -webkit-transform: translate(-1.5rem) scale(1.03);
+        -moz-transform: translate(-1.5rem) scale(1.03);
+        -ms-transform: translate(-1.5rem) scale(1.03);
+        -o-transform: translate(-1.5rem) scale(1.03);
+    }
+}

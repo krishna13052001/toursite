@@ -21,7 +21,7 @@ html{
 body{
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 1.7;
     color: #777;
     /* padding: 30px; */
@@ -203,14 +203,14 @@ body{
         -moz-transform: translateY(30px);
         -ms-transform: translateY(30px);
         -o-transform: translateY(30px);
-}
+    }
     100%{
         transform: translate(0);
         -webkit-transform: translate(0);
         -moz-transform: translate(0);
         -ms-transform: translate(0);
         -o-transform: translate(0);
-}
+    }
 }
 
 
