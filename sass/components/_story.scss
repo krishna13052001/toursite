@@ -1,8 +1,7 @@
 .story{
     width: 75%;
     margin: auto;
-    box-shadow:;
-    03rem6remrgba(0,0,0,$alpha: 0.2);
+    box-shadow: 0 3rem 6rem rgba(0,0,0,$alpha: 0.2);
     background-color: $color-white;
     border-radius: 3px;
     font-size: 1.6rem;
@@ -13,8 +12,7 @@
     -moz-transform: skewX(-12deg);
     -ms-transform: skewX(-12deg);
     -o-transform: skewX(-12deg);
-        &__shape:;
-{
+        &__shape{
         width: 15rem;
         height: 15rem;
         float: left;
