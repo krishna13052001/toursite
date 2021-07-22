@@ -133,11 +133,11 @@ body {
 
 .btn {
   outline: none; }
-  .btn:link, .btn:visited {
+  .btn:link, .btn:visited, .btn {
     text-transform: uppercase;
     text-decoration: none;
     display: inline-block;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 3rem;
     transition: transform 0.2s;
     border-radius: 3.5rem;
     -webkit-border-radius: 3.5rem;
@@ -148,7 +148,9 @@ body {
     -moz-transition: transform 0.2s;
     -ms-transition: transform 0.2s;
     -o-transition: transform 0.2s;
-    position: relative; }
+    position: relative;
+    border: none;
+    cursor: pointer; }
   .btn:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-3px);
@@ -163,7 +165,7 @@ body {
       -moz-transform: scale(1.1);
       -ms-transform: scale(1.1);
       -o-transform: scale(1.1); }
-  .btn:active {
+  .btn:active, .btn:focus {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     transform: translateY(-1px);
     -webkit-transform: translateY(-1px);
@@ -426,13 +428,13 @@ body {
   background-color: #fff;
   border-radius: 3px;
   font-size: 1.6rem;
-  padding: 6rem;
+  padding: 4rem;
   padding-left: 9rem;
-  transform: skewX(-120deg);
-  -webkit-transform: skewX(-120deg);
-  -moz-transform: skewX(-120deg);
-  -ms-transform: skewX(-120deg);
-  -o-transform: skewX(-120deg); }
+  transform: skewX(-12deg);
+  -webkit-transform: skewX(-12deg);
+  -moz-transform: skewX(-12deg);
+  -ms-transform: skewX(-12deg);
+  -o-transform: skewX(-12deg); }
   .story__shape {
     width: 15rem;
     height: 15rem;
@@ -440,13 +442,60 @@ body {
     clip-path: circle(50%);
     -webkit-shape-outside: circle(50% at 50% 50%);
     shape-outside: circle(50% at 50% 50%);
-    transform: translateX(-3rem);
-    -webkit-transform: translateX(-3rem);
-    -moz-transform: translateX(-3rem);
-    -ms-transform: translateX(-3rem);
-    -o-transform: translateX(-3rem); }
+    transform: translateX(-3rem) skewX(12deg) translateY(-1rem);
+    -webkit-transform: translateX(-3rem) skewX(12deg) translateY(-1rem);
+    -moz-transform: translateX(-3rem) skewX(12deg) translateY(-1rem);
+    -ms-transform: translateX(-3rem) skewX(12deg) translateY(-1rem);
+    -o-transform: translateX(-3rem) skewX(12deg) translateY(-1rem); }
   .story__img {
     height: 100%; }
+
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input {
+  font-size: 1.5rem;
+  padding: 1.5rem 2rem;
+  border: none;
+  border-bottom: 3px solid transparent;
+  width: 90%;
+  display: block;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5); }
+  .form__input::-webkit-input-placeholder {
+    color: #999; }
+  .form__input:focus:invalid {
+    border-bottom: 3px solid orangered; }
+
+.form__input:focus {
+  outline: none;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  border-bottom: 3px solid #7ed56f; }
+
+.form__label {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-left: 2rem;
+  margin-top: .7rem;
+  display: block;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s; }
+
+.form__input:placeholder-shown + .form__label {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-4rem);
+  -webkit-transform: translateY(-4rem);
+  -moz-transform: translateY(-4rem);
+  -ms-transform: translateY(-4rem);
+  -o-transform: translateY(-4rem); }
 
 .header {
   height: 95vh;
@@ -527,3 +576,21 @@ body {
 .section-stories {
   padding: 15rem 0;
   background-color: #f7f7f7; }
+
+.section-book {
+  padding: 15rem 0;
+  background-image: linear-gradient(to right, #7ed56f, #28b485); }
+
+.book {
+  background-image: linear-gradient(100deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 50%, transparent 50%), url("../img/nat-10.jpg");
+  background-size: 100%;
+  height: 54rem;
+  border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  -o-border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.2); }
+  .book__form {
+    width: 50%;
+    padding: 6rem; }

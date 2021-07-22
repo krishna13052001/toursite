@@ -4,7 +4,8 @@
   "description": "A website is created for Tours company",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/compiled-style.css"
+    "compile:sass": "node-sass sass/main.scss css/compiled-style.css -w",
+    "compile": "node-sass sass/main.scss css/compiled-style.css"
   },
   "author": "",
   "license": "ISC",

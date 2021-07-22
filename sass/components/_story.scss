@@ -5,14 +5,14 @@
     background-color: $color-white;
     border-radius: 3px;
     font-size: 1.6rem;
-    padding: 6rem;
+    padding: 4rem;
     padding-left: 9rem;
     transform: skewX(-12deg);
     -webkit-transform: skewX(-12deg);
     -moz-transform: skewX(-12deg);
     -ms-transform: skewX(-12deg);
     -o-transform: skewX(-12deg);
-        &__shape{
+    &__shape{
         width: 15rem;
         height: 15rem;
         float: left;
@@ -20,14 +20,13 @@
         -webkit-shape-outside: circle(50% at 50% 50%);
         shape-outside: circle(50% at 50% 50%);
         //margin-right: 2rem;
-        transform: translateX(-3rem);
-        -webkit-transform: translateX(-3rem);
-        -moz-transform: translateX(-3rem);
-        -ms-transform: translateX(-3rem);
-        -o-transform: translateX(-3rem);
+        transform: translateX(-3rem) skewX(12deg) translateY(-1rem);
+        -webkit-transform: translateX(-3rem) skewX(12deg) translateY(-1rem);
+        -moz-transform: translateX(-3rem) skewX(12deg) translateY(-1rem);
+        -ms-transform: translateX(-3rem) skewX(12deg) translateY(-1rem);
+        -o-transform: translateX(-3rem) skewX(12deg) translateY(-1rem);
     }
     &__img{
         height: 100%;
-
     }
 }

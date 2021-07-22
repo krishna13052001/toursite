@@ -1,11 +1,12 @@
 .btn {
     outline: none;
     &:link,
-    &:visited {
+    &:visited,
+    &{
         text-transform: uppercase;
         text-decoration: none;
         display: inline-block;
-        padding: 1.5rem 4rem;
+        padding: 1.5rem 3rem;
         transition: transform 0.2s;
         border-radius: 3.5rem;
         -webkit-border-radius: 3.5rem;
@@ -17,7 +18,9 @@
         -ms-transition: transform 0.2s;
         -o-transition: transform 0.2s;
         position: relative;
-    }
+        border: none;
+        cursor: pointer;
+}
 
     &:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -36,7 +39,8 @@
             -o-transform: scale(1.1);
         }
     }
-    &:active {
+    &:active,
+    &:focus {
         box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
         transform: translateY(-1px);
         -webkit-transform: translateY(-1px);
