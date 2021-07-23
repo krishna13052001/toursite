@@ -2,6 +2,12 @@
     background-color: $color-gray-light-1;
     padding: 25rem 0;
     margin-top: -20vh;
+    @include respond(tab-port){
+        padding: 18rem 0;
+    }
+    @include respond(phone){
+        padding: 18rem 0;
+    }
 }
 
 .section-features{
@@ -21,21 +27,50 @@
         -ms-transform: skewY(7deg);
         -o-transform: skewY(7deg);
     }
+    @include respond(tab-port){
+        padding: 14rem 0;
+    }
+    @include respond(phone){
+        padding: 10rem 0;
+    }
 }
 
 .section-tours{
     background-color: $color-gray-light-1;
-    padding: 25rem 0 15rem 0;
     margin-top: -10rem;
+    padding: 25rem 0 10rem 0;
+    @include respond(tab-port){
+        padding: 20rem 0 10rem 0;
+    }
+    @include respond(phone){
+        padding: 15rem 0 12rem 0;
+    }
 }
 
 .section-stories{
     padding: 15rem 0;
     background-color: $color-gray-light-1;
+    @include respond(tab-port){
+        padding: 10rem 0;
+    }
+    @include respond(phone){
+        padding: 5rem 0;
+    }
 }
 .section-book{
     padding: 15rem 0;
     background-image: linear-gradient(to right, $color-primary-lighter, $color-primary-darker);
+    @include respond(phone){
+        background-image: url("../img/nat-10.jpg");
+        padding: 10rem 0;
+    }
+    @include respond(tab-port){
+        background-image: url("../img/nat-10.jpg");
+        padding: 12rem 0;
+    }
+    @include respond(tab-land){
+        background-image: url("../img/nat-10.jpg");
+    }
 }
 
 .book{
@@ -51,6 +86,31 @@
     &__form{
         width: 50%;
         padding: 6rem;
+        @include respond(phone){
+            width: 100%;
+            padding: 3rem;
+        }
+        @include respond(tab-port){
+            width: 100%;
+            padding: 4rem;
+        }
+        @include respond(tab-land){
+            background-image: url("../img/nat-10.jpg");
+            width: 100%;
+            padding: 4rem;
+        }
 
+    }
+    @include respond(phone){
+        background-image: linear-gradient(to right, #eee, #ddd);
+        height: 56rem;
+    }
+    @include respond(tab-port){
+        background-image: linear-gradient(to right, #eee, #ddd);
+        height: 56rem;
+    }
+    @include respond(tab-land){
+        background-image: linear-gradient(to right, #eee, #ddd);
+        height: 56rem;
     }
 }

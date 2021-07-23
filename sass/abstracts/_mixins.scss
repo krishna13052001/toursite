@@ -21,3 +21,52 @@
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
+
+/*
+    0 to 600px Phone
+    600 to 900px Nomral Tablet
+    900 to 1200px Landscape Tablet
+    1200 to 1800px Normal Desktop Vesrion
+    >1800  Big Desktop Version
+    --------------------------
+*/
+
+@mixin respond-phone {
+    @media (max-width: 600px) {
+        @content
+    };
+}
+/*
+    breakpoint argument in the respond can be phone, tab-port, tab-land, big-desktop or default value
+
+    ORDER of chaing Resposiviness
+    => BASE + tryopgraphy + layouts + gird >  page layout > component
+*/
+
+@mixin respond($breakpoint) {
+    @if ($breakpoint == phone) {
+        @media (max-width: 37.5em) { //600px
+            @content
+        };  
+    }
+    @if ($breakpoint == tab-port) {
+        @media (max-width:56.25em) and (min-width:37.6em) { //601px to 900px
+            @content
+        };  
+    }
+    @if ($breakpoint == tab-land) {
+        @media (min-width: 56.26em) and (max-width: 75em) { //1200px
+            @content
+        };  
+    }
+    @if ($breakpoint == big-desktop) { //1800px
+        @media (min-width: 112.5em) {
+            @content
+        };  
+    }
+    @else{
+        @media (max-width: $breakpoint) {
+            @content
+        }
+    }
+}

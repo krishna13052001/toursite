@@ -18,6 +18,14 @@
         z-index: 7;
         box-shadow: 0 1rem 3rem rgba(0,0,0,0.15);
         cursor: pointer;
+        @include respond(tab-port){
+            top: 4rem;
+            right: 4rem;
+        }
+        @include respond(phone){
+            top: 4.2rem;
+            right: 4.2rem;
+        }
     }
     &__background{
         height: 6rem;
@@ -37,6 +45,14 @@
         -moz-transition: all 0.8s;
         -ms-transition: all 0.8s;
         -o-transition: all 0.8s;
+        @include respond(tab-port){
+            top: 4.2rem;
+            right: 4.2rem;
+        }
+        @include respond(phone){
+            top: 4.2rem;
+            right: 4.2rem;
+        }
 }
     &__nav{
         height: 100vh;
@@ -73,12 +89,18 @@
             text-decoration: none;
             text-transform: uppercase;
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
-            background-size: 230%;
+            background-size: 240%;
             transition: all 0.5s;
             -webkit-transition: all 0.5s;
             -moz-transition: all 0.5s;
             -ms-transition: all 0.5s;
             -o-transition: all 0.5s;
+            @include respond(phone){
+                font-size: 6rem;
+            }
+            @include respond(200px){
+                font-size: 2rem;
+            }
     }
         &:hover,
         &:active{

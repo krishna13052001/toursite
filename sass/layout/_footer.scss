@@ -9,14 +9,22 @@
     // padding: 6rem;
 }
 
+
 .footer__list{
     list-style: none;
 }
 .footer__item{
     display: inline-block;
     padding: 3rem;
+    @include respond(phone){
+        padding: 2rem;
+        margin-right: 1rem;
+    }
     &:not(:last-child){
         margin-right: 1.5rem;
+        @include respond(phone){
+            margin-right: 1rem;
+        }
     }
 }
 
