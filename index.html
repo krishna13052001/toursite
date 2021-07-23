@@ -14,10 +14,26 @@
 </head>
 
 <body>
+    <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="nav-toggle">
+        <label for="nav-toggle" class="navigation__button">
+            <span class="navigation__icon">
+                &nbsp;
+            </span>
+        </label>
+        <div class="navigation__background">&nbsp;</div>
+        <nav class="navigation__nav">
+            <ul class="navigation__list">
+                <li class="navigation__item"><a href="#" class="navigation__link">Home</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">About</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Features</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Tours</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Stories</a></li>
+                <li class="navigation__item"><a href="#" class="navigation__link">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
     <header class="header">
-        <!-- <div class="header__logo-box">
-            <img src="./img/logo-white.png" alt="Logo" class="header__logo">
-        </div> -->
         <div class="header__text-box">
             <h1 class="heading-primary">
                 <span class="heading-primary--main">
@@ -27,7 +43,7 @@
                     IS WHERE LIFE HAPPENS
                 </span>
             </h1>
-            <a href="#" class="btn btn--white btn--animated">Discover Our Tours</a>
+            <a href="#section-tours" class="btn btn--white btn--animated">Discover Our Tours</a>
 
         </div>
     </header>
@@ -100,7 +116,7 @@
             </div>
         </section>
 
-        <section class="section-tours">
+        <section class="section-tours" id="section-tours">
             <div class="u-center-text u-margin-bottom-big">
                 <h2 class="heading-secondary">
                     MOST POPULAR TRIPS
@@ -134,7 +150,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">Rs. 4000</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -166,7 +182,7 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">Rs. 4000</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
@@ -198,14 +214,14 @@
                                     <p class="card__price-only">Only</p>
                                     <p class="card__price-value">Rs. 4000</p>
                                 </div>
-                                <a href="#" class="btn btn--white">Book Now</a>
+                                <a href="#popup" class="btn btn--white">Book Now</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="u-center-text u-margin-top-big">
-                <a href="#" class="btn btn--primary">Discover all tours</a>
+                <a href="#section-tours" class="btn btn--primary">Discover all tours</a>
             </div>
         </section>
         <section class="section-stories">
@@ -249,7 +265,7 @@
                 </div>
             </div>
             <div class="u-center-text u-margin-top-big">
-                <a href="#" class="btn-text">Read More  &nbsp; &rarr;</a>
+                <a href="#" class="btn-text">Read More &nbsp; &rarr;</a>
             </div>
         </section>
         <section class="section-book">
@@ -271,7 +287,9 @@
                                 <label for="email" class="form__label">Email</label>
                             </div>
                             <div class="form__group">
-                                <textarea name="para" id="para" cols="54" rows="3" class="form__input form__input-textarea" placeholder="Did you what to tell anything else?"></textarea>
+                                <textarea name="para" id="para" cols="54" rows="3"
+                                    class="form__input form__input-textarea"
+                                    placeholder="Did you what to tell anything else?"></textarea>
                                 <label for="para" class="form__label">Did you what to tell anything else?</label>
                             </div>
                             <div class="form-group">
@@ -290,16 +308,41 @@
             <div class="col">
                 <div class="footer__navigation">
                     <ul class="footer__list">
-                        <li class="footer__item"><a href="https://www.linkedin.com/in/sathya-krishna-2001/" class="footer__link" target="_blank">LinkedIn</a></li>
-                        <li class="footer__item"><a href="https://github.com/krishna13052001" class="footer__link" target="_blank">GitHub</a></li>
-                        <li class="footer__item"><a href="https://www.instagram.com/krishna_jvsk/" class="footer__link" target="_blank">Instagram</a></li>
-                        <li class="footer__item"><a href="mailto:jvsathyakrishna18bcs@iiitkottayam.ac.in" class="footer__link" target="_blank">Mail</a></li>
-                        <li class="footer__item"><a href="https://jvskrishna.netlify.app/" class="footer__link" target="_blank">J Venkata Sathya Krishna</a></li>
+                        <li class="footer__item"><a href="https://www.linkedin.com/in/sathya-krishna-2001/"
+                                class="footer__link" target="_blank">LinkedIn</a></li>
+                        <li class="footer__item"><a href="https://github.com/krishna13052001" class="footer__link"
+                                target="_blank">GitHub</a></li>
+                        <li class="footer__item"><a href="https://www.instagram.com/krishna_jvsk/" class="footer__link"
+                                target="_blank">Instagram</a></li>
+                        <li class="footer__item"><a href="mailto:jvsathyakrishna18bcs@iiitkottayam.ac.in"
+                                class="footer__link" target="_blank">Mail</a></li>
+                        <li class="footer__item"><a href="https://jvskrishna.netlify.app/" class="footer__link"
+                                target="_blank">J Venkata Sathya Krishna</a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="popup" id="popup">
+        <div class="popup__content">
+            <div class="popup__left">
+                <img src="img/nat-8.jpg" alt="" class="popup__img">
+                <img src="img/nat-9.jpg" alt="" class="popup__img">
+            </div>
+            <div class="popup__right">
+                <a href="#section-tours" class="popup__close">X</a>
+                <h2 class="heading-secondary u-margin-bottom-medium">Book Now!!!</h2>
+                <h3 class="heading-tertiary u-margin-bottom-small">Read CareFully!!</h3>
+                <p class="popup__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, aliquam delectus rem magnam illum
+                    necessitatibus tempore beatae porro possimus reiciendis accusantium exercitationem minus voluptates
+                    suscipit ullam ipsa quis nam labore commodi esse aspernatur. Necessitatibus pariatur, rem aspernatur
+                    consectetur vel eligendi!
+                </p>
+                <a href="#" class="btn btn--primary">Book Now</a>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
