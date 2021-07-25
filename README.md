@@ -16,4 +16,5 @@ After Downloading Run the
   <li>live-server</li>
 </ol>
 
-Deployment Link: https://lionsdistrict316j.netlify.app/
+If are making any changes make sure after making changes in sass code: <br>
+npm run compile
